@@ -48,37 +48,127 @@
 
 // Hint: months with 31 days  January, March, May, July, August, October, and December.
 
-const inputText = document.querySelector("#input-text");
-const checkButton = document.querySelector("#check");
-const message = document.querySelector("#message");
-checkButton.addEventListener("click", checkDays);
+// const inputText = document.querySelector("#input-text");
+// const checkButton = document.querySelector("#check");
+// const message = document.querySelector("#message");
+// checkButton.addEventListener("click", checkDays);
 
-function checkDays() {
+// function checkDays() {
 
 
-  var inputMonth = inputText.value.toUpperCase();
-  var monthData = ["JANUARY", "MARCH", "MAY", "JULY", "AUGUST", "OCTOBER", "DECEMBER"];
-  for (let i=0; i<monthData.length;i++) {
-    if(monthData[i]===inputMonth) {
-console.log('Working') ;   
- break;
-    }
-   
-    else{
-console.log('Sorry') ;  
-    }
+//   var inputMonth = inputText.value.toUpperCase();
+//   var monthData = ["JANUARY", "MARCH", "MAY", "JULY", "AUGUST", "OCTOBER", "DECEMBER"];
+//   for (let i=0; i<monthData.length;i++) {
+//     if(monthData[i]===inputMonth) {
+// console.log('Working') ;   
+//  break;
+//     }
+
+//     else{
+// console.log('Sorry') ;  
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+//  if (inputMonth === "JANUARY" || inputMonth === "MARCH" || inputMonth === "MAY" || inputMonth === "JULY" || inputMonth === "AUGUST" || inputMonth === "OCTOBER" || inputMonth === "DECEMBER"){
+//    message.innerHTML = "It is a month with 31 days !";
+//  }else{
+//         message.innerHTML = " Sorry! It is not a month with 31 days";
+
+// ---------------------------------------------------------
+
+// Fizzbuzz - Write a program to return an array from 1 to 100. But for every multiple of 3, replace the number with "Fizz", for every multiple of 5, replace the number with "Buzz" and for every multiples of 3 & 5, replace with "FizzBuzz".
+
+// Your output should look something like this 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17 .....
+
+
+// function giveElements() {
+//   var numberArr = [];
+//   for (let i = 1; i < 101; i++) {
+//     numberArr.push(i);
+//   }
+//   for (let i = 0; i < numberArr.length; i++) {
+//     if (numberArr[i] % 3 === 0) {
+//       numberArr[i] = "fizz";
+//     } else if (numberArr[i] % 5 === 0) {
+//       numberArr[i] = "Buzz";
+
+//     }
+
+
+
+//   }
+// console.log(numberArr);
+
+//   // console.log(typeof numberArr);
+// }
+// giveElements();
+
+// ----------------------------------------------------
+
+// Print the following star pattern :-
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+// function printStars() {
+//       let star = "";
+
+//   for (let i = 0; i < 5; i++) {
+
+
+//     star += "*";
+//  console.log(star);
+//   }
+
+
+// }
+// printStars();
+
+// --------------------------------------------------
+
+// Write a program to take a number input from user and print multiplication table 12 times for that number.
+
+
+// const inputNumber = document.querySelector("#input-number");
+// const list = document.querySelector("#list");
+// const check = document.querySelector("#check");
+//   check.addEventListener("click",twelveTime);
+// function twelveTime(){
+//   var userValue = inputNumber.value;
+//   for(let i=1;i<13;i++){
+//    calculated = userValue*i;
+//     console.log(calculated)
+
+//   }
+// }
+
+// ---------------------------------------------------
+
+//  return a fibonacci series
+
+function giveFibonacci() {
+  var first = 0; var second = 1;
+  console.log(first);
+    console.log(second);
+  var counter = 1 ;
+  for (let i = first + second; counter <= 18; i=first + second) {
+    console.log(i);
+    first = second;
+    var third = i;
+    second = third;
+counter++;
   }
 }
-
-
-
-
-
-
-
-
-
-  //  if (inputMonth === "JANUARY" || inputMonth === "MARCH" || inputMonth === "MAY" || inputMonth === "JULY" || inputMonth === "AUGUST" || inputMonth === "OCTOBER" || inputMonth === "DECEMBER"){
-  //    message.innerHTML = "It is a month with 31 days !";
-  //  }else{
-  //         message.innerHTML = " Sorry! It is not a month with 31 days";
+giveFibonacci();
