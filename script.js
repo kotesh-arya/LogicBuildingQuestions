@@ -158,17 +158,18 @@
 
 //  return a fibonacci series
 
-function giveFibonacci() {
-  var first = 0; var second = 1;
-  console.log(first);
-    console.log(second);
-  var counter = 1 ;
-  for (let i = first + second; counter <= 18; i=first + second) {
-    console.log(i);
-    first = second;
-    var third = i;
-    second = third;
-counter++;
-  }
+
+function makeSeries() {
+  var primaryVariable = 0;
+  var secondaryVariable = 0;
+  console.log(primaryVariable);
+  console.log(secondaryVariable);
+  var counter = 1;
+  // for (let i = primaryVariable + secondaryVariable; i <= 23; i = primaryVariable + secondaryVariable) {
+  //   console.log(i);
+  //   primaryVariable = secondaryVariable;
+  //   secondaryVariable = i;
+  //   counter++;
+  // }
 }
-giveFibonacci();
+makeSeries();
