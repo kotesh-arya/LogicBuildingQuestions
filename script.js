@@ -159,17 +159,103 @@
 //  return a fibonacci series
 
 
-function makeSeries() {
-  var primaryVariable = 0;
-  var secondaryVariable = 0;
-  console.log(primaryVariable);
-  console.log(secondaryVariable);
-  var counter = 1;
-  // for (let i = primaryVariable + secondaryVariable; i <= 23; i = primaryVariable + secondaryVariable) {
-  //   console.log(i);
-  //   primaryVariable = secondaryVariable;
-  //   secondaryVariable = i;
-  //   counter++;
+// function makeSeries() {
+//   var primaryVariable = 0;
+//   var secondaryVariable = 0;
+//   console.log(primaryVariable);
+//   console.log(secondaryVariable);
+//   var counter = 1;
+//   // for (let i = primaryVariable + secondaryVariable; i <= 23; i = primaryVariable + secondaryVariable) {
+//   //   console.log(i);
+//   //   primaryVariable = secondaryVariable;
+//   //   secondaryVariable = i;
+//   //   counter++;
+//   // }
+// }
+// makeSeries();
+
+// --------------------------------------------------------
+
+// function reverseText(){
+//   var userInput = inputText.value;
+//   var splitReverse =  userInput.split("").reverse().join("");
+//   console.log(splitReverse);
+// }
+// ---------------------------------------------
+
+
+
+
+
+
+
+// function showFactorial(){
+//    var counter = Number(inputText.value);
+
+//   for(let i=counter-1;i>0;i--){
+//    counter = counter*i;
+
+//  console.log(counter);
+//   }
+// }
+// showFactorial();
+
+// const names = ['john','Bob','marie','stephen'];
+// for(let i=names.length-1; i>=0;i--){
+//   console.log(names[i]);
+// }
+
+// function checkPrime() {
+//   var converted = Number(inputText.value);
+//   if (converted) {
+//     message.innerText = "It is a Prime Number";
+//   } else {
+//     message.innerText = " Sorry! It is not  a Prime Number";
+
+//   }
+// }
+
+function checkWeekend() {
+  var days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY'];
+
+  if (days.includes(inputText.value.toUpperCase())) {
+    console.log('weekday');
+    message.innerHTML = `Hey! ${inputText.value} is a weekday`;
+  } else if (inputText.value.toUpperCase() === 'SUNDAY' || inputText.value.toUpperCase() === 'SATURDAY') {
+    console.log('weekend');
+    message.innerHTML = `Hey! ${inputText.value} is a weekend`;
+  } else {
+    console.log('sorry');
+    message.innerHTML = `Please enter a valid input`;
+  }
+  // for (let i = 0; i < days.length; i++) {
+  //   if (inputText.value.toUpperCase() === days[i]) {
+  //     console.log('weekday');
+  //     message.innerHTML = `Hey! ${inputText.value} is a weekday`;
+  //     // break;
+  //   } else if (inputText.value.toUpperCase() === 'SUNDAY' || inputText.value.toUpperCase() === 'SATURDAY') {
+  //           console.log('weekend');
+
+  //     message.innerHTML = `Hey! ${inputText.value} is a weekend`;
+  //   } else {
+  //           console.log('sorry');
+
+  //     message.innerHTML = `Please enter a valid input`;
+
+  //   }
   // }
 }
-makeSeries();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
