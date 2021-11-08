@@ -215,19 +215,19 @@
 //   }
 // }
 
-function checkWeekend() {
-  var days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY'];
+// function checkWeekend() {
+//   var days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY'];
 
-  if (days.includes(inputText.value.toUpperCase())) {
-    console.log('weekday');
-    message.innerHTML = `Hey! ${inputText.value} is a weekday`;
-  } else if (inputText.value.toUpperCase() === 'SUNDAY' || inputText.value.toUpperCase() === 'SATURDAY') {
-    console.log('weekend');
-    message.innerHTML = `Hey! ${inputText.value} is a weekend`;
-  } else {
-    console.log('sorry');
-    message.innerHTML = `Please enter a valid input`;
-  }
+//   if (days.includes(inputText.value.toUpperCase())) {
+//     console.log('weekday');
+//     message.innerHTML = `Hey! ${inputText.value} is a weekday`;
+//   } else if (inputText.value.toUpperCase() === 'SUNDAY' || inputText.value.toUpperCase() === 'SATURDAY') {
+//     console.log('weekend');
+//     message.innerHTML = `Hey! ${inputText.value} is a weekend`;
+//   } else {
+//     console.log('sorry');
+//     message.innerHTML = `Please enter a valid input`;
+  //}
   // for (let i = 0; i < days.length; i++) {
   //   if (inputText.value.toUpperCase() === days[i]) {
   //     console.log('weekday');
@@ -244,12 +244,58 @@ function checkWeekend() {
 
   //   }
   // }
-}
+// }
 
+// ----------------------------------------------------
 
+// Alphanumeric Checking
 
+// const inputNum = document.querySelector("#input-num");
+// const message = document.querySelector("#message");
+// const checkBtn = document.querySelector("#check-btn");
 
+// checkBtn.addEventListener("click", checkNumber);
 
+// function checkNumber() {
+//   var inputDigit = inputNum.value;
+//   var squared = inputDigit ** 2;
+//   var squareText = JSON.stringify(squared);
+//   var splitted = squareText.split("");
+//   console.log(typeof splitted)
+//   console.log(splitted);
+//   console.log(splitted[1]);
+//   if (inputDigit === splitted[1]) {
+//     message.innerHTML = `${inputDigit} is an Automorphic Number`;
+//   } else {
+//     message.innerHTML = `${inputDigit} is not an Automorphic Number`;
+//   }
+// }
+
+// ------------------------------------------------------
+
+// Showing only titles from fetched data
+
+// const fetchData = document.querySelector("#fetch");
+
+// fetchData.addEventListener("click", showResult);
+// var serverUrl = "https://jsonplaceholder.typicode.com/todos";
+// function showResult() {
+//   console.log("hi");
+//   fetch(serverUrl)
+//     .then(response => response.json())
+//     .then(data => {
+//       for (let i = 0; i < data.length; i++) {
+//        var newItem = document.createElement('li');
+//          newItem.innerText = data[i].title;
+//          list.append(newItem)
+//       }
+//     }
+//     )
+//     .catch(errorHandler)
+// }
+// function errorHandler(error) {
+//   console.log(error, "it is the error")
+// }
 
 
 
