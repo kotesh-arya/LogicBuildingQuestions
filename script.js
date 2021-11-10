@@ -250,26 +250,28 @@
 
 // Alphanumeric Checking
 
-// const inputNum = document.querySelector("#input-num");
-// const message = document.querySelector("#message");
-// const checkBtn = document.querySelector("#check-btn");
+const inputNum = document.querySelector("#input-num");
+const message = document.querySelector("#message");
+const checkBtn = document.querySelector("#check-btn");
 
-// checkBtn.addEventListener("click", checkNumber);
+checkBtn.addEventListener("click", checkNumber);
 
-// function checkNumber() {
-//   var inputDigit = inputNum.value;
-//   var squared = inputDigit ** 2;
-//   var squareText = JSON.stringify(squared);
-//   var splitted = squareText.split("");
-//   console.log(typeof splitted)
-//   console.log(splitted);
-//   console.log(splitted[1]);
-//   if (inputDigit === splitted[1]) {
-//     message.innerHTML = `${inputDigit} is an Automorphic Number`;
-//   } else {
-//     message.innerHTML = `${inputDigit} is not an Automorphic Number`;
-//   }
-// }
+function checkNumber() {
+  var inputDigit = inputNum.value;
+  var squared = inputDigit ** 2;
+  console.log(squared);
+  console.log(typeof squared);
+  var squareText = JSON.stringify(squared);
+  var splitted = squareText.split("");
+  console.log(splitted);
+   console.log(typeof splitted);
+  console.log(splitted[1]);
+  if (inputDigit === splitted[1]) {
+    message.innerHTML = `${inputDigit} is an Automorphic Number`;
+  } else {
+    message.innerHTML = `${inputDigit} is not an Automorphic Number`;
+  }
+}
 
 // ------------------------------------------------------
 
@@ -299,6 +301,124 @@
 
 
 
+// --------------------------------------------------------
+  //  functions - easy level
+
+  
+// function makePower (a,b){
+//   var result = a**b;
+//   console.log(result);
+// }
+// makePower(5,2);
+
+// function getArea(a){
+//  var area  = 3*Math.sqrt(3)/2*a*a;
+// console.log(area);
+// }
+// getArea(10);
+
+// function getRoot(a){
+//   var rooted = Math.sqrt(a)
+//   // console.log(rooted);
+//   return rooted;
+// }
+// console.log(getRoot(9));
+
+// function makeSum(a,b){
+// return a*b;
+// }
+// console.log(makeSum(9,8));
+
+// function showWordNum(a){
+//   var splitted = a.split(" ");
+//    var  wordLength = splitted.length;
+//    console.log(wordLength);
+// }
+// showWordNum("kotesh is cool mowa bro");
+// function showMin(a,b){
+//     var result = Math.min(a,b)
+//     console.log(result);
+// }
+// showMin(8,9);
+
+// function findMin(a,b,...chars){
+//       var result = Math.min(a,b,chars)
+
+//   console.log(result);
+// }
+// findMin(2,3,9,8,7,4);
+
+
+// function giveMax(...items) {
+//   var maxItem = items.reduce((main, later) => {
+//     return Math.max(main, later);
+//   });
+//   console.log(maxItem);
+// }
+
+
+
+// giveMax(1, 2, 93);
+
+
+
+//    var items = [1,2,32,3,4,54,4,5,65,66];
+//  var maxItem = items.reduce((main, later) => {
+//     return Math.max(main, later);
+//   })
+//    console.log(maxItem);
+
+
+// equilateral --- all angles are equal
+// isoceles --- only two angles are equal
+// scalene --- no angles will be equal
+
+
+// function typeOfTriangle(a,b,c) {
+
+//   if (a + b + c === 180) {
+//     console.log(a===b);
+//     if (a === b && b === c) {
+//       console.log("It is a equilateral triangle");
+
+//     } else if (a === b || a === c) {
+//       console.log("It is a isoceles triangle");
+//     } else if (a !== b !== c) {
+//       console.log("It is a scalene triangle");
+
+//     }
+//   }
+//   else {
+//     console.log("It is not at all a triangle");
+
+//   }
+
+
+// }
+
+// typeOfTriangle(45,45,90);
+
+
+// special case ---
+// function typeOfTriangle(...angle) {
+
+//   var result = angle.reduce((main, mid, later) => {
+//     if (main === mid || main === later) {
+//       console.log("It is a isoceles triangle");
+//     } else if (main === mid === later) {
+//       console.log("It is a equilateral triangle");
+//     } else if (main !== mid !== later) {
+//       console.log("It is a scalene triangle");
+
+//     } else {
+//       console.log("It is not at all a triangle");
+
+//     }
+//   }
+//   );
+
+//   console.log(angle);
+// }
 
 
 
