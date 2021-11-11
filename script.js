@@ -422,6 +422,44 @@ function checkNumber() {
 
 
 
+// var main = [1, 2, 3];
+// var later = [4, 5, 6];
+// var butter = [7, 8, 9];
+// var combine = main.concat(later, butter);
+// console.log(combine);
+// var text = "neoGcamp";
+// var result = text[4];
+// console.log(result);
+
+// function showLetter(text, digit) {
+//   var final = text[digit];
+//   console.log(final);
+// }
+// showLetter("neoGcamp", 4);
+
+
+function makeUppercase(sentence) {
+  var splitted = sentence.split(" ");
+  // console.log(splitted);
+  // var wordArray = [];
+  // wordArray.push(splitted);
+  // for (let i = 0; i < wordArray.length; i++) {
+  //   var singleCapital = wordArray[i].toUpperCase();
+   
+  // }
+  console.log(splitted[0].toUpperCase());
+  
+}
+makeUppercase("kotesh is cool");
+
+//  main.push(5);
+//    var main = [];
+
+//    console.log(main);
+
+// var some = [1,2,3];
+// console.log(some[1]);
+
 
 
 
