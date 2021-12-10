@@ -227,51 +227,51 @@
 //   } else {
 //     console.log('sorry');
 //     message.innerHTML = `Please enter a valid input`;
-  //}
-  // for (let i = 0; i < days.length; i++) {
-  //   if (inputText.value.toUpperCase() === days[i]) {
-  //     console.log('weekday');
-  //     message.innerHTML = `Hey! ${inputText.value} is a weekday`;
-  //     // break;
-  //   } else if (inputText.value.toUpperCase() === 'SUNDAY' || inputText.value.toUpperCase() === 'SATURDAY') {
-  //           console.log('weekend');
+//}
+// for (let i = 0; i < days.length; i++) {
+//   if (inputText.value.toUpperCase() === days[i]) {
+//     console.log('weekday');
+//     message.innerHTML = `Hey! ${inputText.value} is a weekday`;
+//     // break;
+//   } else if (inputText.value.toUpperCase() === 'SUNDAY' || inputText.value.toUpperCase() === 'SATURDAY') {
+//           console.log('weekend');
 
-  //     message.innerHTML = `Hey! ${inputText.value} is a weekend`;
-  //   } else {
-  //           console.log('sorry');
+//     message.innerHTML = `Hey! ${inputText.value} is a weekend`;
+//   } else {
+//           console.log('sorry');
 
-  //     message.innerHTML = `Please enter a valid input`;
+//     message.innerHTML = `Please enter a valid input`;
 
-  //   }
-  // }
+//   }
+// }
 // }
 
 // ----------------------------------------------------
 
 // Alphanumeric Checking
 
-const inputNum = document.querySelector("#input-num");
-const message = document.querySelector("#message");
-const checkBtn = document.querySelector("#check-btn");
+// const inputNum = document.querySelector("#input-num");
+// const message = document.querySelector("#message");
+// const checkBtn = document.querySelector("#check-btn");
 
-checkBtn.addEventListener("click", checkNumber);
+// checkBtn.addEventListener("click", checkNumber);
 
-function checkNumber() {
-  var inputDigit = inputNum.value;
-  var squared = inputDigit ** 2;
-  console.log(squared);
-  console.log(typeof squared);
-  var squareText = JSON.stringify(squared);
-  var splitted = squareText.split("");
-  console.log(splitted);
-   console.log(typeof splitted);
-  console.log(splitted[1]);
-  if (inputDigit === splitted[1]) {
-    message.innerHTML = `${inputDigit} is an Automorphic Number`;
-  } else {
-    message.innerHTML = `${inputDigit} is not an Automorphic Number`;
-  }
-}
+// function checkNumber() {
+//   var inputDigit = inputNum.value;
+//   var squared = inputDigit ** 2;
+//   console.log(squared);
+//   console.log(typeof squared);
+//   var squareText = JSON.stringify(squared);
+//   var splitted = squareText.split("");
+//   console.log(splitted);
+//    console.log(typeof splitted);
+//   console.log(splitted[1]);
+//   if (inputDigit === splitted[1]) {
+//     message.innerHTML = `${inputDigit} is an Automorphic Number`;
+//   } else {
+//     message.innerHTML = `${inputDigit} is not an Automorphic Number`;
+//   }
+// }
 
 // ------------------------------------------------------
 
@@ -302,9 +302,9 @@ function checkNumber() {
 
 
 // --------------------------------------------------------
-  //  functions - easy level
+//  functions - easy level
 
-  
+
 // function makePower (a,b){
 //   var result = a**b;
 //   console.log(result);
@@ -438,19 +438,19 @@ function checkNumber() {
 // showLetter("neoGcamp", 4);
 
 
-function makeUppercase(sentence) {
-  var splitted = sentence.split(" ");
-  // console.log(splitted);
-  // var wordArray = [];
-  // wordArray.push(splitted);
-  // for (let i = 0; i < wordArray.length; i++) {
-  //   var singleCapital = wordArray[i].toUpperCase();
-   
-  // }
-  console.log(splitted[0].toUpperCase());
-  
-}
-makeUppercase("kotesh is cool");
+// function makeUppercase(sentence) {
+//   var splitted = sentence.split(" ");
+//   // console.log(splitted);
+//   // var wordArray = [];
+//   // wordArray.push(splitted);
+//   // for (let i = 0; i < wordArray.length; i++) {
+//   //   var singleCapital = wordArray[i].toUpperCase();
+
+//   // }
+//   console.log(splitted[0].toUpperCase());
+
+//}
+// makeUppercase("kotesh is cool");
 
 //  main.push(5);
 //    var main = [];
@@ -460,6 +460,41 @@ makeUppercase("kotesh is cool");
 // var some = [1,2,3];
 // console.log(some[1]);
 
+// ---------------------------------------------------------------
+
+// Given two dates, your function should return which one comes before the other.
+
+// Input: minDate('02/05/2021', '24/01/2021') ––> Output: 24/01/2021
+
+const first = document.querySelector("#first");
+const second = document.querySelector("#second");
+const show = document.querySelector("#show");
+const message = document.querySelector("#message");
+
+function showEarlierDate() {
+  var main = first.value.split("-");
+  var later = second.value.split("-");
+  console.log(main);
+  console.log(later);
+
+  if (main[0] > later[0]) {
+    console.log(later.join("/"));
+  } else if (later[0] > main[0]) {
+    console.log(main.join("/"));
+  } else if (main[1] > later[1]) {
+    console.log(later.join("/"));
+
+  } else if (later[1] > main[1]) {
+    console.log(main.join("/"));
+
+  } else if (main[2] > later[2]) {
+    console.log(later.join("/"));
+
+  } else {
+    console.log(main.join("/"));
+
+  }
 
 
-
+}
+show.addEventListener("click", showEarlierDate);
