@@ -466,35 +466,57 @@
 
 // Input: minDate('02/05/2021', '24/01/2021') ––> Output: 24/01/2021
 
-const first = document.querySelector("#first");
-const second = document.querySelector("#second");
-const show = document.querySelector("#show");
-const message = document.querySelector("#message");
+// const first = document.querySelector("#first");
+// const second = document.querySelector("#second");
+// const show = document.querySelector("#show");
+// const message = document.querySelector("#message");
 
-function showEarlierDate() {
-  var main = first.value.split("-");
-  var later = second.value.split("-");
-  console.log(main);
-  console.log(later);
+// function showEarlierDate() {
+//   var main = first.value.split("-");
+//   var later = second.value.split("-");
+//   console.log(main);
+//   console.log(later);
 
-  if (main[0] > later[0]) {
-    console.log(later.join("/"));
-  } else if (later[0] > main[0]) {
-    console.log(main.join("/"));
-  } else if (main[1] > later[1]) {
-    console.log(later.join("/"));
+//   if (main[0] > later[0]) {
+//     console.log(later.join("/"));
+//   } else if (later[0] > main[0]) {
+//     console.log(main.join("/"));
+//   } else if (main[1] > later[1]) {
+//     console.log(later.join("/"));
 
-  } else if (later[1] > main[1]) {
-    console.log(main.join("/"));
+//   } else if (later[1] > main[1]) {
+//     console.log(main.join("/"));
 
-  } else if (main[2] > later[2]) {
-    console.log(later.join("/"));
+//   } else if (main[2] > later[2]) {
+//     console.log(later.join("/"));
 
-  } else {
-    console.log(main.join("/"));
+//   } else {
+//     console.log(main.join("/"));
 
+//   }
+
+
+// }
+// show.addEventListener("click", showEarlierDate);
+
+// ----------------------------------------------------------------
+
+// Write a function which generates a secret code from a given string, by shifting characters of alphabet by N places. Example:
+// Input: encodeString("neogcamp", 2) ––> Output: pgqiecor 
+
+
+
+// Function for getting the digit place of an alphabet
+
+
+function getDigit(n) {
+  for (let i = 97; i < 123; i++) {
+    if (n === String.fromCharCode(i)) {
+      console.log(i);
+    }
   }
-
-
 }
-show.addEventListener("click", showEarlierDate);
+getDigit("z");
+
+
+
