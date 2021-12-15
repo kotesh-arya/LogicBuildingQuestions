@@ -509,14 +509,35 @@
 // Function for getting the digit place of an alphabet
 
 
-function getDigit(n) {
-  for (let i = 97; i < 123; i++) {
-    if (n === String.fromCharCode(i)) {
-      console.log(i);
+// function getDigit(n) {
+//   let splitted = n.split("");
+//   for (let i = 97; i < 123; i++) {
+//     if (n === String.fromCharCode(i)) {
+//       console.log(i);
+//     }
+//   }
+// }
+// getDigit("k");
+
+// main function 
+function encodeString(n) {
+  let str = "";
+  for (let i = 0; i < n.length; i++) {
+    let asciiCode = n.charCodeAt(i);
+    if (asciiCode === 121 || asciiCode === 122) {
+      str += String.fromCharCode(asciiCode - 24);
+    } else {
+      str += String.fromCharCode(asciiCode + 2);
     }
+
   }
+  console.log(str);
 }
-getDigit("z");
+encodeString("kotesh");
+
+//  console.log(n.charCodeAt(1));
+
+
 
 
 
