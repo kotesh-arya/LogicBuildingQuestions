@@ -438,19 +438,7 @@
 // showLetter("neoGcamp", 4);
 
 
-// function makeUppercase(sentence) {
-//   var splitted = sentence.split(" ");
-//   // console.log(splitted);
-//   // var wordArray = [];
-//   // wordArray.push(splitted);
-//   // for (let i = 0; i < wordArray.length; i++) {
-//   //   var singleCapital = wordArray[i].toUpperCase();
 
-//   // }
-//   console.log(splitted[0].toUpperCase());
-
-//}
-// makeUppercase("kotesh is cool");
 
 //  main.push(5);
 //    var main = [];
@@ -520,24 +508,81 @@
 // getDigit("k");
 
 // main function 
-function encodeString(n) {
-  let str = "";
-  for (let i = 0; i < n.length; i++) {
-    let asciiCode = n.charCodeAt(i);
-    if (asciiCode === 121 || asciiCode === 122) {
-      str += String.fromCharCode(asciiCode - 24);
-    } else {
-      str += String.fromCharCode(asciiCode + 2);
-    }
 
-  }
-  console.log(str);
-}
-encodeString("kotesh");
+
+
+
+
+// function encodeString(n) {
+//   let str = "";  // initialised a empty string for storing obtained letters
+//   for (let i = 0; i < n.length; i++) {  // for loop for getting asciiiCode 
+//     let asciiCode = n.charCodeAt(i);
+
+//     // Using asciiCode of each character and processing it by if condition only for handling edze case.
+
+//     if (asciiCode === 121 || asciiCode === 122) {
+//       str += String.fromCharCode(asciiCode - 24); // appendig the converted letter obtained from the calculation.
+//     } else {
+//       str += String.fromCharCode(asciiCode + 2); // appendig the converted letter obtained from the calculation.
+//     }
+
+//   }
+//   message.innerHTML = str;
+// }
+// encodeString("neogcamp");
 
 //  console.log(n.charCodeAt(1));
 
+// -------------------------------------------------------------------
+
+// Given a sentence, return a sentence with first letter of all words as capital.
+// Example:
+// Input: toSentenceCase('we are neoGrammers') ––> Output: We Are NeoGrammers
+// ------------------------------------------------------------
+// const message = document.querySelector("#message");
+
+
+// function makeUppercase(sentence) {
+// var splitted = sentence.split(" ");
+//   // console.log(splitted);
+//   let result = " ";
+//   for (let i = 0; i < splitted.length; i++) {
+
+//     result += splitted[i][0].toUpperCase() + " ";
 
 
 
 
+//   }
+
+//   message.innerHTML = result;
+
+// }
+// makeUppercase("kotesh is cool");
+// --------------------------------------------------------------------
+function makeUpper(a) {
+  let splitted = a.split(" ");
+  // message.innerHTML = splitted;
+  let mainStr = " ";
+  for (let i = 0; i < splitted.length; i++) {
+    splitted[i] = splitted[i].split("");
+    splitted[i][0] = splitted[i][0].toUpperCase();
+    console.log(splitted[i][0]);
+    mainStr = splitted[i].join("");
+    console.log(mainStr);
+
+  }
+
+  // console.log(mainStr);
+
+}
+makeUpper("kotesh is such damn cool");
+
+
+// splitted[i][0].toUpperCase();
+
+// let str = "kotesh";
+//  str = str.split('');
+// str[3] = str[3].toUpperCase();
+// str = str.join('');
+// console.log(str);
