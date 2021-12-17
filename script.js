@@ -542,41 +542,67 @@
 // const message = document.querySelector("#message");
 
 
-// function makeUppercase(sentence) {
-// var splitted = sentence.split(" ");
-//   // console.log(splitted);
-//   let result = " ";
+// function makeUpper(a) {
+//   let splitted = a.split(" ");
+//   let mainStr = " ";
+
 //   for (let i = 0; i < splitted.length; i++) {
-
-//     result += splitted[i][0].toUpperCase() + " ";
-
-
-
-
+//     let finalSplit = splitted[i].split("");
+//     soloStr = finalSplit[0].toUpperCase();
+//     soloStr += finalSplit.slice(1).join("");
+//     mainStr += soloStr + " ";
 //   }
 
-//   message.innerHTML = result;
+//   console.log(mainStr);
 
 // }
-// makeUppercase("kotesh is cool");
-// --------------------------------------------------------------------
-function makeUpper(a) {
-  let splitted = a.split(" ");
-  // message.innerHTML = splitted;
-  let mainStr = " ";
-  for (let i = 0; i < splitted.length; i++) {
-    splitted[i] = splitted[i].split("");
-    splitted[i][0] = splitted[i][0].toUpperCase();
-    console.log(splitted[i][0]);
-    mainStr = splitted[i].join("");
-    console.log(mainStr);
+// makeUpper("kotesh is such a calm and  cool");
 
-  }
+// chunk logic for single word
 
-  // console.log(mainStr);
 
+// let name = "kotesh";
+// let mainArr = name.split("");
+// let enlarge = "";
+//   enlarge =  mainArr[0].toUpperCase();
+//   enlarge += mainArr.slice(1).join("");
+// console.log(enlarge);
+
+// -----------------------     -------------------------------------------
+
+//  Swaroop's way form dev discord channel 
+
+
+const capitalize = (word) => {
+  return word.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ');
 }
-makeUpper("kotesh is such damn cool");
+console.log(capitalize('hello    world'));
+console.log(capitalize('world   '));
+console.log(capitalize('swaroop jaikumar   rajwal'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // splitted[i][0].toUpperCase();
