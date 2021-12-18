@@ -573,36 +573,15 @@
 //  Swaroop's way form dev discord channel 
 
 
-const capitalize = (word) => {
-  return word.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ');
-}
-console.log(capitalize('hello    world'));
-console.log(capitalize('world   '));
-console.log(capitalize('swaroop jaikumar   rajwal'));
+// const capitalize = (word) => {
+//   return word.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ');
+// }
+// console.log(capitalize('hello    world'));
+// console.log(capitalize('world   '));
+// console.log(capitalize('swaroop jaikumar   rajwal'));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// --------------------------- ------- - - - - - - - --------
 
 
 // splitted[i][0].toUpperCase();
@@ -612,3 +591,31 @@ console.log(capitalize('swaroop jaikumar   rajwal'));
 // str[3] = str[3].toUpperCase();
 // str = str.join('');
 // console.log(str);
+
+
+// --------------------------- ------- - - - - - - - --------
+
+// Given an array of numbers, your function should return an array in the ascending order.
+// Example:
+// Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
+
+
+function sortArray(arr){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
