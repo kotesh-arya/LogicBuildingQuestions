@@ -600,11 +600,35 @@
 // Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
 
 
-function sortArray(arr){
+function sortArray(arr) {
+  // let ascended = [];
+   const  singleItem = arr.map(a => Math.min(...arr) );
+      // ascended.push(singleItem);
+
+  // for (let i = 0; i < arr.length; i++) {
+
+
+  //   // let sliced = arr.slice(i);
+
+  //   // let minFromSliced = Math.min(...sliced);
   
+   
+  //   // console.log(minFromSliced);
+  //   // let smallest = Math.min(...arr);
+  
+   
+
+  // }
+
+
+
+
+  console.log(singleItem);
 }
 
+sortArray([9, 1, 3]);
 
+// console.log(Math.min(5,2,3));
 
 
 
