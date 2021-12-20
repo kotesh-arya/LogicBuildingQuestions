@@ -630,7 +630,7 @@ sortArray([9, 1, 3]);
 
 // console.log(Math.min(5,2,3));
 
-
+// Array methods
 
 
 
