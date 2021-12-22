@@ -600,37 +600,55 @@
 // Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
 
 
-function sortArray(arr) {
-  // let ascended = [];
-   const  singleItem = arr.map(a => Math.min(...arr) );
-      // ascended.push(singleItem);
+// function sortArray(arr) {
+//   // let ascended = [];
+//    const  singleItem = arr.map(a => Math.min(...arr) );
+//       // ascended.push(singleItem);
 
-  // for (let i = 0; i < arr.length; i++) {
+//   // for (let i = 0; i < arr.length; i++) {
 
 
-  //   // let sliced = arr.slice(i);
+//   //   // let sliced = arr.slice(i);
 
-  //   // let minFromSliced = Math.min(...sliced);
-  
-   
-  //   // console.log(minFromSliced);
-  //   // let smallest = Math.min(...arr);
-  
-   
+//   //   // let minFromSliced = Math.min(...sliced);
 
-  // }
+
+//   //   // console.log(minFromSliced);
+//   //   // let smallest = Math.min(...arr);
 
 
 
+//   // }
 
-  console.log(singleItem);
-}
 
-sortArray([9, 1, 3]);
+
+
+//   console.log(singleItem);
+// }
+
+// sortArray([9, 1, 3]);
 
 // console.log(Math.min(5,2,3));
 
 // Array methods
+
+
+// let smallArr = [];
+
+// smallArr.length = 5;
+
+// console.log(smallArr);
+
+//Array.prototype.forEach()
+
+let sample = [1, 2, 3, 4];
+
+sample.forEach(function maker(a) {
+  console.log(a + 8888);
+});
+
+
+
 
 
 
