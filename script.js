@@ -643,8 +643,8 @@
 
 let sample = [1, 2, 3, 4];
 
-sample.forEach(function maker(a) {
-  console.log(a + 8888);
+sample.forEach(function (item, index, array) {
+ console.log(index, index);
 });
 
 
