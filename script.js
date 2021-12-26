@@ -651,25 +651,66 @@ sample.forEach(function (item, index, array) {
 
 // Added counter app
 
-let count = 0
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
+// let count = 0
+// let saveEl = document.getElementById("save-el")
+// let countEl = document.getElementById("count-el")
 
-function increment() {
-    count += 1
-    countEl.textContent = count
+// function increment() {
+//     count += 1
+//     countEl.textContent = count
+// }
+
+// function save() {
+//     let countStr = count + " - "
+//     saveEl.textContenttStr
+//     countEl.textContent = 0
+//     count = 0
+// }
+
+// console.log("Let's count people on the subway!")
+
+--------------------------------------------------------------------
+
+//The black jack Game app
+
+
+let firstCard = 10
+let secondCard = 4
+let cards = [firstCard, secondCard]
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+function startGame() {
+    renderGame()
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContenttStr
-    countEl.textContent = 0
-    count = 0
+function renderGame() {
+    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
 }
 
-console.log("Let's count people on the subway!")
 
-
+function newCard() {
+    let card = 6
+    sum += card
+    // Push the card to the cards array
+    renderGame()
+}
 
 
 
