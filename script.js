@@ -767,3 +767,4 @@ sample.forEach(function (item, index, array) {
 
 // Chrome extension logic extension 
 
+  message.textContent = input.value
