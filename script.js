@@ -641,11 +641,11 @@
 
 //Array.prototype.forEach()
 
-let sample = [1, 2, 3, 4];
+// let sample = [1, 2, 3, 4];
 
-sample.forEach(function (item, index, array) {
- console.log(index, index);
-});
+// sample.forEach(function (item, index, array) {
+//  console.log(index, index);
+// });
 
 // ---------------------------------------------------------------------------
 
@@ -669,7 +669,7 @@ sample.forEach(function (item, index, array) {
 
 // console.log("Let's count people on the subway!")
 
---------------------------------------------------------------------
+// --------------------------------------------------------------------
 
 // //The black jack Game app
 
@@ -771,4 +771,20 @@ sample.forEach(function (item, index, array) {
 
   // ----------------------------------------------------------------
 
-  
+  // Fizzbuzz - Write a program to return an array from 1 to 100. But for every multiple of 3, replace the number with "Fizz", for every multiple of 5, replace the number with "Buzz" and for every multiples of 3 & 5, replace with "FizzBuzz".
+
+// Your output should look something like this 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17 .....
+const convertedArr = () => {
+  const mainArr = [];
+  for (let i = 0; i < 100; i++) {
+      mainArr.push(i);
+
+      (mainArr[i] % 3 === 0) ? mainArr[i] = "Fizz":
+          (mainArr[i] % 5 === 0) ? mainArr[i] = "Buzz" :
+          (mainArr[i] % 3 && mainArr[i] % 5 === 0) ? mainArr[i] = "FizzBuzz" :
+          mainArr[i] = mainArr[i];
+  }
+  console.log(mainArr);
+
+}
+convertedArr();
