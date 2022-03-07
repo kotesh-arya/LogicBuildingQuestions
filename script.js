@@ -788,3 +788,32 @@ const convertedArr = () => {
 
 }
 convertedArr();
+//Tanay promise version
+const  fakeFetch = (msg, shouldReject) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldReject) {
+        reject(`error from server: ${msg}`);
+      }
+     else{
+       resolve(`from server: ${msg}`);
+     }
+    }, 3000);
+  });
+};
+// fakeFetch("kotesh is cool");
+
+//My own promise version
+
+
+
+const simplePromiseValidation = (text)=>{
+  new Promise((resolve,reject)=>{
+    if(text.length%2===0){
+      resolve(console.log(`the text ${text} has even number of characters`));
+    }else{
+      reject(console.log(`the letters in ${text} are odd in number`));
+    }
+  })
+}
+ simplePromiseValidation("kotesh");
