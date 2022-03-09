@@ -817,3 +817,30 @@ const simplePromiseValidation = (text)=>{
   })
 }
  simplePromiseValidation("kotesh");
+
+ //Higher order function in functional programming
+
+function adjectifier(adjective) {
+  return function (text) {
+      return `${adjective} ${text}`
+  }
+};
+let nightifier = adjectifier("dark");
+const result = nightifier("man");
+console.log(result);
+
+let roomsArr = ["h1", "h2", "h3", "h4"];
+
+
+
+let modifiedRooms = roomsArr.map((room => {
+  if (room === "h3") {
+      return "hx"
+  } else {
+      return room
+  }
+}))
+
+
+console.log(modifiedRooms); // manipulated copy of main array
+console.log(roomsArr); //Main  array
