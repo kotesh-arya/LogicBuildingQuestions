@@ -844,3 +844,14 @@ let modifiedRooms = roomsArr.map((room => {
 
 console.log(modifiedRooms); // manipulated copy of main array
 console.log(roomsArr); //Main  array
+
+//Composing in javascript
+
+
+const userNameLogger = (userName) => `name is ${userName}`;
+const idLogger = (id) => `ID is ${id}`;
+
+const composedFunction = (first, second) => `the person ${first} and ${second}`;
+
+const result7 = composedFunction(userNameLogger("kotesh"), idLogger(21614013));
+console.log(result7)
